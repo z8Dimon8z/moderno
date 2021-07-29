@@ -9,7 +9,7 @@ var uglify = require('gulp-uglify'); // сжатие js
 var cssmin = require('gulp-cssmin'); // cжатие css
 
 gulp.task('sass', function () { //обработка sass
-    return gulp.src('app/scss/style.scss') // основной файл sass
+    return gulp.src('app/scss/**/*.scss') // основной файл sass
             .pipe(sass({outputStyle: 'compressed'})) // сжатие сss (compresed)
             .pipe(rename({suffix: '.min'})) // добавление к файлу css .min
             .pipe(autoprefixer({ // растовление вендорных префиксов
@@ -59,7 +59,7 @@ gulp.task('browser-sync', function() { // server
 });
 
 gulp.task('watch', function(){ // отсдеживание изменнений в файлах
-    gulp.watch('app/scss/style.scss', gulp.parallel('sass'))
+    gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'))
     gulp.watch('app/*.html', gulp.parallel('html'))
     gulp.watch('app/*.js', gulp.parallel('js'))
 });
