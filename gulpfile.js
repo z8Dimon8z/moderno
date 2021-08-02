@@ -33,6 +33,7 @@ gulp.task('style', function(){ // дополнительные cтили к са
 gulp.task('script', function(){ // дополнительные скрипты к сайту
     return gulp.src([
         'node_modules/slick-carousel/slick/slick.js', // slick slider ( как пример)
+        'node_modules/mixitup/dist/mixitup.js',
         // 'app/js/main.js' // дополнительно
     ])
     .pipe(concat('libs.min.js')) // прописование этих файлов libs.js
