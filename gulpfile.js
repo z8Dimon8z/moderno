@@ -22,7 +22,8 @@ gulp.task('sass', function () { //обработка sass
 gulp.task('style', function(){ // дополнительные cтили к сайту
     return gulp.src([
         'node_modules/normalize.css/normalize.css', // нормолайс
-        'node_modules/slick-carousel/slick/slick.css' // slik slider (как пример)
+        'node_modules/slick-carousel/slick/slick.css', // slik slider (как пример)
+        'node_modules/rateyo/src/jquery.rateyo.css',// рейтинг звездочки
     ])
     .pipe(concat('libs.min.css')) // прописование этих файлов libs.css
     .pipe(cssmin()) // сжатие подключенных библиотек сss
@@ -33,7 +34,8 @@ gulp.task('style', function(){ // дополнительные cтили к са
 gulp.task('script', function(){ // дополнительные скрипты к сайту
     return gulp.src([
         'node_modules/slick-carousel/slick/slick.js', // slick slider ( как пример)
-        'node_modules/mixitup/dist/mixitup.js',
+        'node_modules/mixitup/dist/mixitup.js', // табы
+        'node_modules/rateyo/src/jquery.rateyo.js',// рейтинг звездочки
         // 'app/js/main.js' // дополнительно
     ])
     .pipe(concat('libs.min.js')) // прописование этих файлов libs.js
