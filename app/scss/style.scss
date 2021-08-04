@@ -6,7 +6,8 @@
 .header__top-inner{
     display: flex;
     justify-content: space-between;
-    height: 90px;align-items: center;
+    height: 90px;
+    align-items: center;
 }
 .header__text{
     margin-left: auto;
@@ -259,9 +260,58 @@
     }
 }
 
+// advatages
 
-  
-  
+.advatages{
+   background-color: $bg;
+   padding: 110px 0; 
+}
+.advatages__title{
+    color: #fff;
+}
+.advatages__inner{
+    display: flex;
+    justify-content: space-between;
+} 
+.advatages__item{
+    padding: 0 15px;
+    max-width: 370px;
+    text-align: center;
+    &:hover{
+       .advatages__item-images{
+           background-color: $green;
+           path{
+              stroke: #fff;  
+           }
+       } 
+       .advatages__item-title{
+            color: $green;
+       }
+    }
+    &-images{
+       height: 114px;
+       width: 114px;
+       background-color: #fff;
+       border-radius: 50%;
+       display: flex;
+       justify-content: center; 
+       align-items:center;
+       margin: 0 auto;
+       margin-bottom: 30px;
+       transition: all .3s;
+    }
+    &-title{
+        font-size: 24px;
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: 25px;
+        transition: all .3s;
+    }
+    &-text{
+        font-size: 15px;
+        color: #b0bec5;
+    }
+} 
 
 
   
