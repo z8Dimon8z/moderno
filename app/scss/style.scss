@@ -52,6 +52,16 @@
         font-weight: 500;
     }
 }
+// уведомления
+.header__circule{
+    width: 34px;
+    height: 34px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    & + .header__circule{
+        margin-left: 15px;
+    }
+}
 // search
 .search{
     background-repeat: no-repeat;
