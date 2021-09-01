@@ -52,6 +52,9 @@
         font-weight: 500;
     }
 }
+.header__btn-menu, .menu__btn{
+    display: none;
+}
 // уведомления
 .header_box{
     display: flex;
@@ -215,6 +218,8 @@
     background-color: #fff;
     height: 0;
     overflow: hidden;
+    z-index: 1;
+
 }
 .circule__item{
     background-color: #fff;
@@ -792,4 +797,12 @@
     }
 }
 
+
+
+
+
+
+
+// media запросы
+@import 'media';
 
