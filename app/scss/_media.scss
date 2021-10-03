@@ -34,7 +34,7 @@
     .menu__list{
         display: none;
         background-color: $bg;
-        position: absolute;
+        position: fixed;
         top: 150px;
         left: 0;
         right: 0;
@@ -100,7 +100,7 @@
 @media (max-width: 520px){
     .header{
         overflow: hidden;
-        // position: relative;
+        position: relative;
     }
     .header__btn-menu{
         display: block;
@@ -149,12 +149,14 @@
     }
     .circule__menu{
         top: 52px;
+        position: fixed;
     }
     .user__box {
         margin-top: 36px;
     }
     .user__menu{
-        top: 55px;
+        top: 70px;
+        position: fixed;
     }
     .menu__list{
         top: 70px;

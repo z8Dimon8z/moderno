@@ -18,7 +18,7 @@
              <div class="container">
                  <div class="header__top-inner">
                      <div class="header__logo">
-                         <a href="#">
+                         <a href="page.html">
                          <img src="images/logo.png" alt="logo">
                          </a>
                      </div>
@@ -140,7 +140,7 @@
                          </div>
                      </div>
                          <a href="#" class="header__btn header__btn-login header__btn-login--off ">Login</a>
-                         <a href="#" class="header__btn header__btn-logout header__btn-login--on">Logout</a>
+                         <a class="header__btn header__btn-logout header__btn-login--on" data-fancybox data-src="#modal" href="javascript:;">Logout</a>
                          <a href="#" class="header__btn header__btn-register header__btn-login--off">Register</a>
                      </div>
                      <div class="header__btn-menu icon-user">
@@ -721,6 +721,23 @@
         </div>
     </div>
 </footer>
+
+<div id="modal">
+    <div class="login__wrapper">
+        <div class="login__title">Login</div>
+        <form action="#">
+            <label class="login__label login__label-name">
+                <input type="text" placeholder="Name" required>
+            </label>
+            <label class="login__label login__label-pass">
+                <input type="text" placeholder="Password" required>
+            </label>
+            <button type="submit">Submit</button>
+            <a href="#" class="create-acc">Creat An Account?</a>
+            <a href="#" class="lost-pass">Lost Password?</a>
+        </form>
+    </div>
+</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>

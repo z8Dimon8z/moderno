@@ -24,6 +24,7 @@ gulp.task('style', function(){ // дополнительные cтили к са
         'node_modules/normalize.css/normalize.css', // нормолайс
         'node_modules/slick-carousel/slick/slick.css', // slik slider (как пример)
         'node_modules/rateyo/src/jquery.rateyo.css',// рейтинг звездочки
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css', // css fancybox
     ])
     .pipe(concat('libs.min.css')) // прописование этих файлов libs.css
     .pipe(cssmin()) // сжатие подключенных библиотек сss
@@ -37,6 +38,7 @@ gulp.task('script', function(){ // дополнительные скрипты �
         'node_modules/mixitup/dist/mixitup.js', // табы
         'node_modules/rateyo/src/jquery.rateyo.js',// рейтинг звездочки
         // 'app/js/main.js' // дополнительно
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js', // плагин fancybox
     ])
     .pipe(concat('libs.min.js')) // прописование этих файлов libs.js
     .pipe(uglify()) // сжатие подключенных файлов js
